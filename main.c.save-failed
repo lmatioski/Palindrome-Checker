@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{   ///salva a palavra
+    char palavra[50], palavra1[50];
+    printf("Insira a Palavra:");
+    fgets(palavra, sizeof palavra, stdin);
+    palavra[strlen(palavra) -1] = '\0';
+    char *strcpy(char *palavra1, const char *palavra);
+
+
+    ///mostra a palavra
+    printf("A palavra inserida foi: %s\n", palavra);
+
+    ///inverte a palavra
+    int length = strlen(palavra);
+    int c, i, j;
+
+    for (i=0,j=length-1; i<j;i++,j--)
+    {
+        c=palavra[i];
+        palavra[i]= palavra[j];
+        palavra[j] = c;
+    }
+    printf("A palavra invertida fica: %s\n", palavra);
+
+    if (palavra == palavra1) {
+        printf("A palavra é um palíndromo.");
+        }else {
+        printf("A palavra NÃO é um palíndromo.");
+    };
+    return 0;
+}

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1490052142 source:c:\users\lmati\google drive\documents\c projects\check palindrome\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
